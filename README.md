@@ -22,4 +22,6 @@ Algorithms - BFS - bfs algorithm, takes in starting node, ending node, graphstat
 Algorithms - Djikstra - djikstra algorithm, takes in same inputs as bfs along with arraylist of nodes, which is necessary for assigning tentative distances to each node unlike bfs
 Algorithms - A* - a* algorithm, takes in same inputs as djikstra
 
-State - GraphState - 
+State - GraphState - contains several variables that indirectly control the visual state of the project
+
+Visualization - GraphPanel - converts variables in graphstate to what we see on the screen
