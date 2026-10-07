@@ -7,7 +7,7 @@ import visualization.*;
 
 public class BFS {
 	public static void findPath(Node startIn, Node endIn, GraphState stateIn, GraphPanel panelIn) throws InterruptedException {
-		stateIn.alg = 0;
+		stateIn.alg = 0; //screen displays "BFS"
 		panelIn.repaint();
 		try {
 			Thread.sleep(1000);
