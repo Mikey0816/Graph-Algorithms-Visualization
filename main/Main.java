@@ -12,35 +12,29 @@ public class Main {
 		ArrayList<Node> nodes = new ArrayList<>();
 		ArrayList<Edge> allEdges = new ArrayList<>();
 		
-		//visualization stuff
-		GraphState myState = new GraphState();
-		GraphPanel myPanel = new GraphPanel(myState, new Node("poop", 67, 67), new Node("poop", 67, 67), nodes, allEdges);
-		
-		//yeah
-		myState.stage = 0;
-		
 		//creating nodes and edges and adding them to respective arraylists
-		Node a = new Node("A", 0, 10);
-		Node b = new Node("B", 13, 15);
-		Node c = new Node("C", 27, 5);
-		Node d = new Node("D", 40, 10);
-		Node e = new Node("E", 20, 40);
+		Node a = new Node("A", 10, 20);
+		Node b = new Node("B", 25, 20);
+		Node c = new Node("C", 18, 30);
+		Node d = new Node("D", 40, 30);
 		
 		nodes.add(a);
 		nodes.add(b);
 		nodes.add(c);
 		nodes.add(d);
-		nodes.add(e);
 		
 		addEdge(a, b, allEdges);
+		addEdge(a, c, allEdges);
 		addEdge(b, c, allEdges);
-		addEdge(c, d, allEdges);
-		addEdge(a, e, allEdges);
-		addEdge(e, d, allEdges);
+		addEdge(b, d, allEdges);
 		
 		//setting start and end nodes
 		Node startNode = a;
 		Node endNode = d;
+		
+		//visualization stuff
+		GraphState myState = new GraphState();
+		GraphPanel myPanel = new GraphPanel(myState, startNode, endNode, nodes, allEdges);
 		
 		JFrame myFrame = new JFrame("Algorithm Comparison Visualization");
 		myFrame.setSize(1200, 800);
