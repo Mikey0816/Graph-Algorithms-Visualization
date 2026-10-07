@@ -32,7 +32,7 @@ public class Main {
 		Node startNode = a;
 		Node endNode = d;
 		
-		//visualization stuff
+		//visualization setup
 		GraphState myState = new GraphState();
 		GraphPanel myPanel = new GraphPanel(myState, startNode, endNode, nodes, allEdges);
 		
@@ -42,7 +42,6 @@ public class Main {
 		myFrame.add(myPanel);
 		myFrame.setVisible(true);
 		
-		//setup stuff
 		for (Node x : nodes) {
 			myState.blackNodes.add(x);
 		}
