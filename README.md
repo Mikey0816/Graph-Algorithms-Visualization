@@ -1,4 +1,4 @@
-# Graph-Algorithm-Comparison
+# Graph-Algorithms-Visualization
 This is an independent java project I made over the course of a few months. Given a graph of nodes and edges, weights are automatically assigned based on distance. Then, various algorithms are ran on the graph. These algorithms are visualized in real-time. They are also compared through various statistics in a table. An explanation is included at the bottom of the screen.
 
 Quick Explanation:
