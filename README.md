@@ -12,18 +12,25 @@ The algorithms update the GraphState file as it runs. This file contains several
 Packages:
 
 Main - main file and node and edge data structures
+
 Algorithms - the 3 algorithms
+
 State - graphstate file
+
 Visualization - graphpanel file
 
 Files:
 
 Main - Main - sets everything up to run the algorithms and then runs the algorithms
+
 Main - Node - node data structure: name, position x, and position y
+
 Main - Edge - edge data structure: one node it’s connected to, the other node it’s connected to, weight
 
 Algorithms - BFS - bfs algorithm, takes in starting node, ending node, graphstate object, and graphpanel object
+
 Algorithms - Djikstra - djikstra algorithm, takes in same inputs as bfs along with arraylist of nodes, which is necessary for assigning tentative distances to each node unlike bfs
+
 Algorithms - A* - a* algorithm, takes in same inputs as djikstra
 
 State - GraphState - contains several variables that indirectly control the visual state of the project
